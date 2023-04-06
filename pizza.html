@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          background-color: lightblue;
+        }
+        
+        h2 {
+          color: black;
+          text-align: center;
+        }
+        
+        p {
+          font-family: verdana;
+          font-size: 20px;
+        }
+        input[type=submit]:hover {
+  background-color: #45a049;
+        </style>
+</head>
+
+<body>
+  <h2>Pizza order toppings</h2>  
+  <form> 
+                <label for="pepperoni"><input type="checkbox" id="pepperoni" name="toppings[]" value="Pepperoni">Pepperoni</label><br>
+                <label for="sausage"><input type="checkbox" id="sausage" name="toppings[]" value="Sausage">Sausage</label><br>
+                <label for="mushrooms"><input type="checkbox" id="mushrooms" name="toppings[]" value="Mushrooms">Mushrooms</label><br>
+                <label for="onions"><input type="checkbox" id="onions" name="toppings[]" value="Onions">Onions</label><br>
+                <label for="peppers"><input type="checkbox" id="peppers" name="toppings[]" value="Peppers">Peppers</label><br>
+                <label for="olives"><input type="checkbox" id="olives" name="toppings[]" value="Olives">Olives</label><br>
+                <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <button type="submit" class="submit-button">Submit</button>
+            <button type="reset" class="reset-button">Reset</button>
+  </form>
+</body>
+</html>
